@@ -1,0 +1,147 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.container{
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+}
+.player{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ position: relative;
+
+}
+.player video{
+  width: 100%;
+}
+.controls{
+  background: #000;
+  flex-grow: 1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.controls-line{
+  width: 90%;
+  height: 3px;
+  background: rgba(255,255,255,0.5);
+  margin-bottom: 20px;
+  border-radius: 20px;
+  transition:1s transform;
+}
+.controls-line:hover{
+  transform: scaleY(3);
+}
+.controls-btns{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.controls-btns__playpause{
+  color:#fff;
+}
+.hidden{
+  display: none;
+}
+.controls-line__track{
+  width: 0%;
+  height: 100%;
+  background: red;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.controls-line__track::after{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  right: 0;
+  background: red;
+}
+
+.controls-btns__left{
+  display: flex;
+  align-items: center;
+}
+.controls-btns__forward i{
+  color: white;
+  font-size: 20px;
+}
+.controls-btns__volume{
+  font-size: 20px;
+  color: #fff;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.controls-btns__volume_line{
+  height: 3px;
+  width: 100px;
+  background:  #fff;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.controls-btns__volume_line-track{
+  background: #fff;
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.controls-btns__volume_line-track::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 5;
+}
+.controls-btns__forward{
+  margin-left: 10px;
+}
+.special-icon{margin-right: 10px;}
+.controls-btns__right{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.controls-btns__screen{
+  font-size: 20px;
+  color: #fff;
+  margin-right: 15px;
+}
+.controls-btns__screen_uncompress{
+  font-size: 16px;
+  color: #000;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  padding: 3px;
+  background: #fff;
+}

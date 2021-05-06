@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <title>Video Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="player">
+        <video src="video.mp4" class="player-video"></video>
+        <div class="controls">
+          <div class="controls-line">
+            <div class="controls-line__track"></div>
+          </div>
+          <div class="controls-btns">
+            <div class="controls-btns__left">
+              <div class="controls-btns__playpause">
+                <div class="controls-btns__play"><i class="fas fa-play"></i></div>
+                <div class="controls-btns__pause hidden"> <i class="fas fa-pause "></i></div>
+              </div>
+              <div class="controls-btns__forward">
+                <i class="fas fa-fast-forward"></i>
+              </div>
+              <div class="controls-btns__volume">
+                <div class="controls-btns__volume_change">
+                <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="controls-btns__volume_line">
+                  <div class="controls-btns__volume_line-track"></div>
+                </div>
+              </div>
+            </div>
+            <div class="controls-btns__right">
+              <div class="controls-btns__screen">
+                <div class="controls-btns__screen_compress"><i class="fas fa-compress"></i></div>
+                <div class="controls-btns__screen_uncompress hidden"><p class="text">Закрыть</p></div>
+              </div>
+              <div class="controls-btns__file">
+                <input type="file" class="controls-btns__file_input">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
